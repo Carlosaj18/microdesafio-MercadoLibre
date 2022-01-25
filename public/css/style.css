@@ -107,6 +107,35 @@ header h2 marquee i {
   background-size: cover;
 }
 
+/* FORMULARIO */
+/* FORMULARIO */
+.create-form {
+  padding: 20px 15px;
+}
+.control-formulario {
+  margin-bottom: 15px;
+}
+
+.control-formulario label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+}
+
+.control {
+  width: 100%;
+  padding: 8px;
+}
+
+.boton-formulario {
+  background-color: #39b54a;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius:16px;
+}
+
 /* MAIN */
 
 main {
@@ -230,6 +259,34 @@ section article .content-info-product .descuento {
 
   section article div .descripcion {
     display: none;
+  }
+
+  /* FORMULARIO */
+  .create-form {
+    padding: 20px 15px;
+  }
+  .control-formulario {
+    margin-bottom: 15px;
+  }
+  
+  .control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+  }
+  
+  .control {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius:16px;
   }
 }
 
