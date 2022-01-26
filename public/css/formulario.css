@@ -1,0 +1,408 @@
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+*/
+
+/* Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*border: 2px solid red;*/
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* HEADER */
+  .main-header {
+    background-color: #eac926;
+    padding: 20px; /*Relleno de los elementos */
+  }
+  
+  .main-header-top-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-bottom: 24px;
+    
+  }
+  
+  .logo {
+    width: 50%;
+  }
+  
+  .search-input {
+    display: flex;
+    align-items: start;
+    margin-right: 5px;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .input {
+    width: 100%;
+    height: 25px;
+    border-radius: 16px;
+    border: 1px solid  black;
+  }
+  
+  header h2 marquee i {
+    margin-right: 10px;
+   }
+  
+  .hamburger-button { 
+    /*margin: 1em auto;
+    text-align: center;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 8px;
+    margin-bottom: 0.5em;*/
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+  }
+  
+  .main-nav-bar {
+    display: none;
+  }
+  
+  .main-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .main-nav-bar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+  }
+  
+  .baner-header {
+    margin: 0px;
+  }
+  
+  .baner-header img {
+    max-width: 100%;
+    background-size: cover;
+  }
+  
+  /* FORMULARIO */
+ 
+  .create-form, .create-form-signup, .create-form-login {
+    padding: 20px 15px;
+    margin: 25px;
+    border: 1px solid black;
+  }
+  .control-formulario {
+    margin-bottom: 15px;
+  }
+  
+  .control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+  }
+  
+  .control {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius:16px;
+  }
+
+  #perfil-user, #categorias {
+      text-align: start;
+      font-weight: bold;
+      margin-bottom: 16px;
+  }
+
+
+
+  
+  /* MAIN */
+  
+  main {
+    width: 90%;
+    margin: auto;
+  }
+  
+  article {
+    margin-bottom: 10px;
+  }
+  
+  main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+  }
+  
+  .content-precio {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .content-precio .precio {
+    font-weight: bold;
+    width: 40%;
+  }
+  
+  .content-precio .descuento {
+    width: 60%;
+  }
+  
+  .image-class {
+    border: 1px solid #ebebeb;
+    padding: 15px
+  }
+  
+  .delivery {
+    margin: 0px;
+    color: rgb(8, 238, 8);
+    font-size: 24px;
+  }
+  
+  .content-info-product {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    position:relative; /*Posicion del carro*/
+  
+  }
+  
+  .texto {
+    font-size: 12px;
+  }
+  
+  .titulares {
+    font-size:24px;
+    margin: 10px;
+  }
+  
+  .precio {
+    font-size: 18px;
+  }
+  
+  .descuento {
+    font-size:16px;
+  }
+  
+  .descripcion strong{
+    font-size:16px;
+  }
+  
+  .icons {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: rgb(7, 7, 148);
+    font-size: 34px;
+  }
+  
+  .container-article {
+    /*Contenedor de las imagenes*/
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+  }
+  
+  main section article img{
+    width: 100%; /*Se ajusta la imagen al contenedor*/
+  }
+  
+  section article .content-info-product .descuento {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* MEDIA QUERRY*/
+  @media (min-width:10px) and (max-width: 480px){
+    /** @media(max-width:769px) and (min-width:362px) {*/
+  
+    .text-header {
+      font-size:16px;
+      margin: 24px;
+    }
+  
+    .articulos {
+      display: flex;
+      flex-wrap: wrap;
+      border: 5px dotted blue;
+    }
+    
+    article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+    section article div .descripcion {
+      display: none;
+    }
+  
+    /* FORMULARIO */
+    .create-form {
+      padding: 20px 15px;
+    }
+    .control-formulario {
+      margin-bottom: 15px;
+    }
+    
+    .control-formulario label {
+      margin-bottom: 5px;
+      font-style: italic;
+      display: block;
+    }
+    
+    .control {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .boton-formulario {
+      background-color: #39b54a;
+      border: none;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius:16px;
+    }
+  }
+  
+  @media (min-width:481px) and (max-width: 768px){
+    /** {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }*/
+  
+      .text-header {
+        margin: 24px;
+        font-size: 26px;
+      }
+  
+      article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      }
+      .main-nav-bar {
+        display: block;
+      }
+  
+      .main-header-top-bar {
+        display:flex;
+        justify-content: space-between;
+      }
+      
+      .hamburger-button {
+        display: none;
+      }
+  
+      .main-nav-bar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+    
+      .main-nav-bar ul {
+        display: flex;
+      }
+    
+      .main-nav-bar li {
+        margin: 0 5px;
+      }
+  
+      .main-nav-bar li a {
+        font-size: 17px;
+        text-align: center;
+      }
+  
+      .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 5px dotted gray;
+      }
+  }
+  
+  @media (min-width:769px) {
+  
+    article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .main-nav-bar {
+      display: block;
+    }
+  
+    .text-header {
+      margin: 24px;
+      font-size: 46px;
+      display: flex;
+    }
+  
+  
+    .main-header-top-bar {
+      display:flex;
+      justify-content: space-between;
+    }
+  
+    .hamburger-button {
+      display: none;
+    }
+    
+    .main-nav-bar {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .main-nav-bar ul {
+      display: flex;
+    }
+  
+    .main-nav-bar li {
+      margin: 0 5px;
+    }
+    .articulos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      border: 5px dotted black;
+    }
+  }
+  
+  /*
+  1. 576
+  2. 768
+  3. 992
+  4. 1200 
+  
+  */
