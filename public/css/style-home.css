@@ -207,7 +207,7 @@ main section article i{
 }
 
 .delivery i:hover {
-  transform: rotate(300deg);
+  transform: rotate(-90deg);
   /*
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -216,7 +216,6 @@ main section article i{
   
   
 }
-
 
 .content-info-product {
   border: 1px solid #ebebeb;
@@ -241,31 +240,22 @@ main section article i{
   font-size:16px;
 }
 
+/*
 .descripcion strong:hover {
-  display: none;
+  opacity: 1;
 }
-
 
 .descripcion strong {
-  transition: display;
-}
-
-
-
-/*
-.descripcion-container::before {
-  font-size:16px;
-  font-weight: bold;
-  display: none;
- 
-}
-
-.descripcion-container:hover::after {
-  font-size:16px;
-  font-weight: bold;
-  display: block;  
+  opacity: 0;
 }*/
 
+.container-article:hover .content-info-product .descripcion {
+  display: block;
+}
+
+.container-article .content-info-product .descripcion {
+  display: none;
+}
 
 .icons {
   margin-top: 24px;
