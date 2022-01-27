@@ -28,6 +28,9 @@ body {
 .main-header {
   background-color: #eac926;
   padding: 20px; /*Relleno de los elementos */
+  position:fixed;
+  width: 100%;
+  z-index: 100; /* Sirve cuando hay elementos con position relative o absolute*/
 }
 
 .main-header-top-bar {
@@ -38,8 +41,19 @@ body {
   
 }
 
+/* ANIMACION */
+
 .logo {
   width: 50%;
+  animation: aumentar 1s lineal infinite normal;
+}
+
+@keyframes aumentar {
+  0% {
+    transform: scale(1);
+  }
+  100% {transform: scale(1.5);
+  }
 }
 
 .search-input {
@@ -103,7 +117,8 @@ header h2 marquee i {
 }
 
 .baner-header img {
-  max-width: 100%;
+  margin-top: 250px;
+  width: 100%;
   background-size: cover;
 }
 
@@ -187,11 +202,26 @@ main section article i{
   font-size: 24px;
 }
 
+.delivery i {
+  transition: all;
+}
+
+.delivery i:hover {
+  transform: rotate(300deg);
+  /*
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);*/
+  
+  
+}
+
+
 .content-info-product {
   border: 1px solid #ebebeb;
   padding: 15px;
-  position:relative; /*Posicion del carro*/
-
+  position:relative; /*Posicion del carro para que este en el contenedor */
 }
 
 .texto {
@@ -211,9 +241,31 @@ main section article i{
   font-size:16px;
 }
 
-.descripcion strong{
-  font-size:16px;
+.descripcion strong:hover {
+  display: none;
 }
+
+
+.descripcion strong {
+  transition: display;
+}
+
+
+
+/*
+.descripcion-container::before {
+  font-size:16px;
+  font-weight: bold;
+  display: none;
+ 
+}
+
+.descripcion-container:hover::after {
+  font-size:16px;
+  font-weight: bold;
+  display: block;  
+}*/
+
 
 .icons {
   margin-top: 24px;
@@ -229,6 +281,11 @@ main section article i{
   width: 300px;
 }
 
+.container-article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(204, 204, 204);
+}
+
 main section article img{
   width: 100%; /*Se ajusta la imagen al contenedor*/
 }
@@ -236,6 +293,14 @@ main section article img{
 section article .content-info-product .descuento {
   color: green;
   font-weight: bold;
+}
+
+.icons i:hover {
+  color: green;
+}
+
+.icons i {
+  transition: color; 
 }
 
 /* MEDIA QUERRY*/
@@ -386,6 +451,19 @@ section article .content-info-product .descuento {
     flex-direction: row;
     border: 5px dotted black;
   }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  .footer-copyright {
+    font-size: 16px;
+    margin-left: 20px;
+  } 
 }
 
 /*
