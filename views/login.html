@@ -68,20 +68,23 @@
         <img  src="/images/img-home-banner.jpg" alt="banner">
       </div> 
     <main>
-    <form action="/" method="POST" class="create-form-login">
-        <!-- Adicionar el acccion-->
-        <div  class="control-formulario" >
-            <label for="nombre">Nombre de usuario</label>
-            <input type="text" name="nombre" id="nombre" class="control"/>
-            <span class="feedback"></span>
-        </div>
-        <div class="control-formulario">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="control"/>
-            <span class="feedback"></span>
-        </div>
-        <button class="boton-formulario""><a href="/">ENVIAR</a></button>
-        </form>
+        <fieldset>
+            <h2>Login</h2>
+            <form action="/" method="POST" class="create-form-login">
+                <!-- Adicionar el acccion-->
+                <div  class="control-formulario" >
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" name="nombre" id="nombre" class="control"/>
+                    <span class="feedback"></span>
+                </div>
+                <div class="control-formulario">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="control"/>
+                    <span class="feedback"></span>
+                </div>
+                <button class="boton-formulario""><a href="/">ENVIAR</a></button>
+                </form>
+        </fieldset>
     </main>
     <footer>
         <div class="footer">

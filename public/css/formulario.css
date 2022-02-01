@@ -57,7 +57,6 @@ Descripciones: 16px */
     width: 100%;
     height: 25px;
     border-radius: 16px;
-    border: 1px solid  black;
   }
   
   header h2 marquee i {
@@ -116,7 +115,6 @@ Descripciones: 16px */
   .create-form, .create-form-signup, .create-form-login {
     padding: 20px 15px;
     margin: 25px;
-    border: 1px solid black;
 
   }
   .control-formulario {
@@ -142,7 +140,6 @@ Descripciones: 16px */
   .boton-formulario:hover {
     background-color: #0022AA;
     color: #ffffff;
-    
   }
 
   .boton-formulario {
@@ -168,9 +165,6 @@ Descripciones: 16px */
   .icons i {
     transition: color; 
   }
-
-
-
   
   /* MAIN */
   
@@ -179,91 +173,6 @@ Descripciones: 16px */
     margin: auto;
   }
   
-  article {
-    margin-bottom: 10px;
-  }
-  
-  main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-  }
-  
-  .content-precio {
-    display: flex;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  
-  .content-precio .precio {
-    font-weight: bold;
-    width: 40%;
-  }
-  
-  .content-precio .descuento {
-    width: 60%;
-  }
-  
-  .image-class {
-    border: 1px solid #ebebeb;
-    padding: 15px
-  }
-  
-  .delivery {
-    margin: 0px;
-    color: rgb(8, 238, 8);
-    font-size: 24px;
-  }
-  
-  .content-info-product {
-    border: 1px solid #ebebeb;
-    padding: 15px;
-    position:relative; /*Posicion del carro*/
-  
-  }
-  
-  .texto {
-    font-size: 12px;
-  }
-  
-  .titulares {
-    font-size:24px;
-    margin: 10px;
-  }
-  
-  .precio {
-    font-size: 18px;
-  }
-  
-  .descuento {
-    font-size:16px;
-  }
-  
-  .descripcion strong{
-    font-size:16px;
-  }
-  
-  .icons {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    color: rgb(7, 7, 148);
-    font-size: 34px;
-  }
-  
-  .container-article {
-    /*Contenedor de las imagenes*/
-    padding: 16px;
-    margin: 16px;
-    width: 300px;
-  }
   
   main section article img{
     width: 100%; /*Se ajusta la imagen al contenedor*/
@@ -415,12 +324,6 @@ Descripciones: 16px */
   
     .main-nav-bar li {
       margin: 0 5px;
-    }
-    .articulos {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      border: 5px dotted black;
     }
 
     .footer {

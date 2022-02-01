@@ -69,51 +69,54 @@
         <img  src="/images/img-home-banner.jpg" alt="banner">
       </div> 
     <!-- MAIN-->
-
     <!-- FORMULARIO-->
+    <main> 
+        <fieldset>
+            <h2>Formulario del Producto</h2>
+            <form action="/create-product" method="POST" class="create-form">
+                <div class="control-formulario">
+                    <label for="product">Nombre del producto: </label>
+                    <input type="text" name="product" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label for="precio">Precio: </label>
+                    <input type="text" name="precio" placeholder="123.56" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label for="">Categoria:</label>
+                    <select name="categoria" id="" class="control">
+                        <option value="hotgar">Hogar</option>
+                        <option value="electro">Electro</option>
+                        <option value="indumentaria">Indumentaria</option>
+                    </select>
+                </div>
+                <div class="control-formulario">
+                    <label for="">Ciudad:</label>
+                    <select name="ciudad" id="" class="control">
+                        <option value="bogota">Bogota</option>
+                        <option value="medellin">Medellin</option>
+                        <option value="barranquilla">Barranquilla</option>
+                    </select>
+                </div>
+                <div class="control-formulario">
+                    <label for="">Descripcion:</label>
+                    <textarea name="descripcion" class="control"></textarea>
+                </div>
+                <div class="control-formulario-oferta">
+                    <label>Esta en oferta: </label>
 
-    <form action="/create-product" method="POST" class="create-form">
-        <div class="control-formulario">
-            <label for="product">Nombre del producto: </label>
-            <input type="text" name="product" class="control">
-        </div>
-        <div class="control-formulario">
-            <label for="precio">Precio: </label>
-            <input type="text" name="precio" placeholder="123.56" class="control">
-        </div>
-        <div class="control-formulario">
-            <label for="">Categoria:</label>
-            <select name="categoria" id="" class="control">
-                <option value="hotgar">Hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </div>
-        <div class="control-formulario">
-            <label for="">Ciudad:</label>
-            <select name="ciudad" id="" class="control">
-                <option value="bogota">Bogota</option>
-                <option value="medellin">Medellin</option>
-                <option value="barranquilla">Barranquilla</option>
-            </select>
-        </div>
-        <div class="control-formulario">
-            <label for="">Descripcion:</label>
-            <textarea name="descripcion" class="control"></textarea>
-        </div>
-        <div class="control-formulario">
-            <label for="enOferta">Esta en oferta: </label>
-            <input type="radio" name="enOferta">
-            <label for="nOenOferta">No esta en oferta: </label>
-            <input type="radio" name="nOenOferta">
-        </div>
-        <button type="submit" class="boton-formulario">Enviar</button>
-        <button type="reset" class="boton-formulario">Borrar</button>
-        
-    </form>
+                    <label for="enOferta">Si: </label>
+                    <input type="radio" name="enOferta">
 
-    <main>
-        <section>
+                    <label for="nOenOferta">No: </label>
+                    <input type="radio" name="enOferta">
+                </div>
+                <button type="submit" class="boton-formulario">Enviar</button>
+                <button type="reset" class="boton-formulario">Borrar</button>
+                
+            </form>
+        </fieldset>    
+        <section class="ultima-visita">
             <h2 class="titulares">Basado en tu última visita</h2>
             <section class="articulos">
                 <article class="container-article">
@@ -246,7 +249,7 @@
                 </article>
             </section>    
         </section>
-        <section>
+        <section class="ofertas">
             <h2 class="titulares">Sección de Ofertas</h2>
             <section class="articulos">
                 <article class="container-article">

@@ -52,7 +52,7 @@ body {
   0% {
     transform: scale(1);
   }
-  100% {transform: scale(1.5);
+  100% {transform: scale(1.2);
   }
 }
 
@@ -176,6 +176,13 @@ main section article i{
   top: -15px;
 }
 
+
+/* ----- CARRUSEL ----- */
+
+.control-formulario-oferta {
+  margin-bottom: 24px;
+}
+
 .content-precio {
   display: flex;
   margin-bottom: 10px;
@@ -230,6 +237,7 @@ main section article i{
 .titulares {
   font-size:24px;
   margin: 10px;
+  margin-top:  24px;
 }
 
 .precio {
@@ -293,6 +301,15 @@ section article .content-info-product .descuento {
   transition: color; 
 }
 
+.footer-copyright {
+  margin-top: 24px;
+}
+
+.boton-formulario:hover {
+  background-color: #0022AA;
+  color: #ffffff;
+}
+
 /* MEDIA QUERRY*/
 @media (min-width:10px) and (max-width: 480px){
   /** @media(max-width:769px) and (min-width:362px) {*/
@@ -343,6 +360,7 @@ section article .content-info-product .descuento {
     padding: 5px 10px;
     border-radius:16px;
   }
+
 }
 
 @media (min-width:481px) and (max-width: 768px){
@@ -394,7 +412,8 @@ section article .content-info-product .descuento {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      border: 5px dotted gray;
+      justify-content: center;
+      align-items: center;
     }
 }
 
@@ -412,7 +431,6 @@ section article .content-info-product .descuento {
     font-size: 46px;
     display: flex;
   }
-
 
   .main-header-top-bar {
     display:flex;
@@ -439,7 +457,8 @@ section article .content-info-product .descuento {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 5px dotted black;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer {
@@ -453,6 +472,7 @@ section article .content-info-product .descuento {
   .footer-copyright {
     font-size: 16px;
     margin-left: 20px;
+    
   } 
 }
 
